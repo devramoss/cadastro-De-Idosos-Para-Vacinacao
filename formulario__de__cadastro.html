@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+     <main>
+     <header>
+        <h1 id="titulo">Cadastro de idosos para vacinação</h1>
+        <p id="subtitulo">Complete o formulário abaixo com suas informações</p>
+        <picture>
+              <source media="(max-width: 375px)" srcset="./imagens/elders.png" type="image/png">
+              <img src="./imagens/elders350.png" alt="" id="idosos">
+        </picture>
+    </header>
+       <form>
+                <fieldset class="grupo campo dados">
+                        <div>
+                            <label for="nome"><strong>Nome</strong></label>
+                            <input type="text" name="nome" id="nome" required>
+                        </div>
+
+                        <div>
+                            <label for="sobrenome"><strong>Sobrenome</strong></label>
+                            <input type="text" name="sobrenome" id="sobrenome" required>
+                        </div>
+                </fieldset>
+                <fieldset class="grupo campo dados">
+                                <div>
+                                    <label for="dataDeNascimento"><strong>Data de nascimento</strong></label>
+                                    <input type="date" name="data-de-nascimento" id="data-de-nascimento" required style="width:21rem;"><br><br>
+                                </div>
+                                
+                                <div style="margin-left: 0.1em;">
+                                    <label for="cpf"><strong>CPF</strong></label>
+                                    <input type="text" name="cpf" id="cpf" required placeholder="xxx.xxx.xxx.xx"><br><br>
+                                </div>
+                                
+                                <label><strong>Sexo</strong></label>
+                                <label class="sexo">
+                                    <input type="radio" name="sexo" id="feminino" checked value="feminino"> Feminino <br>
+                                </label>
+                                <label class="sexo">
+                                    <input type="radio" name="sexo" id="masculino" value="masculino"> Masculino
+                                </label>
+                </fieldset>
+                <div class=" grupo campo dados">
+                            <div>
+                                <label for="edereco"><strong>Endereço</strong></label>
+                                <input type="text" name="endereco" id="endereco" required>
+                            </div>
+                            <div>
+                                <label for="bairro"><strong>Bairro</strong></label>
+                                <select id="bairros" required style="width:21rem;">
+                                    <option selected disabled value="">Selecione</option>
+                                    <option value="ana_carrara">Ana Carrara</option>
+                                    <option value="antônio_justino">Antônio Justino</option>
+                                    <option value="aracati">Aracati</option>
+                                    <option value="area_rural_de_cataguases">Área Rural de Cataguases</option>
+                                    <option value="beira_rio">Beira Rio</option>
+                                    <option value="bela_vista">Bela Vista</option>
+                                    <option value="bom_pastor">Bom Pastor </option>
+                                    <option value="bom_retiro">Bom Retiro</option>
+                                    <option value="carijos">Carijós</option>
+                                    <option value="cataguarino">Cataguarino</option>
+                                    <option value="centenario">Centenário</option>
+                                    <option value="centro">Centro</option>
+                                    <option value="chacara_bom_sucesso">Chácara Bom Sucesso</option>
+                                    <option value="chacara_palmeiras">Chácara Palmeiras</option>
+                                    <option value="cidade_nova">Cidade Nova</option>
+                                    <option value="colinas">Colinas</option>
+                                    <option value="dico_leite">Dico Leite</option>
+                                    <option value="distrito_industrial">Distrito Industrial</option>
+                                    <option value="esperanca">Esperança</option>
+                                    <option value="gloria">Glória</option>
+                                    <option value="granjaria">Granjaria</option>
+                                    <option value="guanabara">Guanabara</option>
+                                    <option value="haidee">Haidee</option>
+                                    <option value="horto_florestal">Horto Florestal </option>
+                                    <option value="ibraim">Ibraim</option>
+                                    <option value="ime_farage">Imê Farage</option>
+                                    <option value="imigrantes">Imigrantes</option>
+                                    <option value="iracema">Iracema</option>
+                                    <option value="idependencia">Independência</option>
+                                    <option value="izabel_tavares">Izabel Tavares</option>
+                                    <option value="jardim">Jardim</option>
+                                    <option value="jardim_bandeirantes_1">Jardim Bandeirantes 1</option>
+                                    <option value="jardim_bandeirantes_2">Jardim Bandeirantes 2</option>
+                                    <option value="jardim_santa_cristina">Jardim Santa Cristina</option>
+                                    <option value="joao_riguete">João Riguete</option>
+                                    <option value="jose_gabriel_de_passos">José Gabriel de Passos</option>
+                                    <option value="leonardo">Leonardo</option>
+                                    <option value="marote">Marote</option>
+                                    <option value="menezes">Menezes</option>
+                                    <option value="miguel_rocha">Miguel Rocha</option>
+                                    <option value="morada_da_serra">Morada da Serra</option>
+                                    <option value="nossa_senhora_das_gracas">Nossa Senhora das Graças</option>
+                                    <option value="pampulha">Pampulha</option>
+                                    <option value="paraiso">Paraíso</option>
+                                    <option value="popular">Popular</option>
+                                    <option value="pouso_alegre">Pouso Alegre</option>
+                                    <option value="primavera">Primavera</option>
+                                    <option value="recanto_das_palmeiras">Recanto das Palmeiras </option>
+                                    <option value="santa_clara">Santa Clara </option>
+                                    <option value="são_cristovao">São Cristóvão </option>
+                                    <option value="sao_diniz">São Diniz </option>
+                                    <option value="sao_joao">São João</option>
+                                    <option value="sao_marcos">São Marcos</option>
+                                    <option value="sao_pedro">São Pedro </option>
+                                    <option value="sao_sebastiao">São Sebastião</option>
+                                    <option value="sebastiao_adolfo">Sebastião Adolfo </option>
+                                    <option value="sol_nascente">Sol Nascente</option>
+                                    <option value="taquara_preta">Taquara Preta </option>
+                                    <option value="thome">Thomé</option>
+                                    <option value="vila_domingos_lopes">Vila Domingos Lopes</option>
+                                    <option value="vila_minalda">Vila Minalda </option>
+                                    <option value="vila_reis">Vila Reis </option>
+                                    <option value="vila_rezende">Vila Rezende</option>
+                                    <option value="vila_sao_jose">Vila São José</option>
+                                    <option value="vila_tereza">Vila Tereza</option>
+                                    <option value="vista_alegre">Vista Alegre</option>
+                                </select>
+                            </div>
+                </div>
+                <div class="grupo campo dados">
+                            <div>
+                                <label for="telefone"><strong><strong>Telefone</strong></strong></label>
+                                <input type="tel" name="telefone" id="telefone" required>
+                            </div>
+                            <div>
+                                <label><strong>Email</strong></label>
+                                <input type="email" name="email" id="email">
+                            </div>
+               </div>
+                <label><strong>Possui alguma das doenças relacionadas abaixo? (Marque quantas tiver)</strong></label><br><br>
+                <div class="campo doencas">
+                    <input type="checkbox" name="diabetes_mellitus" id="diabetes_mellitus" value="Diabetes Mellitus">
+                    <label for="diabetes_mellitus">Diabetes Mellitus</label><br><br>
+                    <input type="checkbox" name="hipertensao_arterial_estagio_3" id="hipertensao_arterial_estagio_3"
+                        value="Hipertensão Arterial estágio 3">
+                    <label for="hipertensao_arterial_estagio_3"> Hipertensão Arterial estágio 3</label><br><br>
+                    <input type="checkbox" name="hipertensao_arterial_estagios1_e_2_com_lesao_em_orgao-alvo"
+                        id="hipertensao_arterial_estagios1_e_2_com_lesao_em_orgao-alvo"
+                        value="Hipertensão Arterial estágios 1 e 2 com lesão em órgão-alvo">
+                    <label for="hipertensao_arterial_estagios1_e_2_com_lesao_em_orgao-alvo">Hipertensão Arterial estágios 1 e 2 com
+                        lesão em órgão-alvo</label><br><br>
+                    <input type="checkbox" name="hipertensao_resistente" id="hipertensao_resistente" value="Hipertensão Resistente">
+                    <label for="hipertensao_resistente">Hipertensão Resistente</label><br><br>
+                    <input type="checkbox" name="doenca_pulmonar_obstrutiva_cronica" id="doenca_pulmonar_obstrutiva_cronica"
+                        value="Doença Pulmonar Obstrutiva Crônica">
+                    <label for="doenca_pulmonar_obstrutiva_cronica">Doença Pulmonar Obstrutiva Crônica</label><br><br>
+                    <input type="checkbox" name="insuficiencia_renal" id="insuficiencia_renal" value="Insuficiência Renal">
+                    <label for="insuficiencia_renal">Insuficiência Renal</label><br><br>
+                    <input type="checkbox" name="doencas_cardiovasculares_e_cerebrovasculares"
+                        id="doencas_cardiovasculares_e_cerebrovasculares" value="Doenças Cardiovasculares e Cerebrovasculares">
+                    <label for="doencas_cardiovasculares_e_cerebrovasculares">Doenças Cardiovasculares e Cerebrovasculares</label><br><br>
+                    <input type="checkbox" name="individuos_transplantados_de_orgao_solido_ou_de_medula_ossea"
+                        id="individuos_transplantados_de_orgao_solido_ou_de_medula_ossea"
+                        value="Indivíduos transplantados de órgão sólido ou de medula óssea">
+                    <label for="individuos_transplantados_de_orgao_solido_ou_de_medula_ossea">Indivíduos transplantados de órgão sólido
+                        ou de medula óssea</label><br><br>
+                    <input type="checkbox" name="demais_individuos_imunossuprimidos" id="demais_individuos_imunossuprimidos"
+                        value="Demais indivíduos imunossuprimidos">
+                    <label for="demais_individuos_imunossuprimidos">Demais indivíduos imunossuprimidos</label><br><br>
+                    <input type="checkbox" name="anemia_falciforme" id="anemia_falciforme" value="Anemia Falciforme">
+                    <label for="anemia_falciforme"> Anemia Falciforme</label><br><br>
+                    <input type="checkbox" name="obesidade_grau3" id="obesidade_grau3" value="Obesidade grau 3">
+                    <label for="obesidade_grau3"> Obesidade grau 3 (IMC ≥ 40)</label><br><br>
+                    <input type="checkbox" name="sindrome_down" id="sindrome_down" value="Síndrome Down">
+                    <label for="sindrome_down"> Síndrome de Down</label><br><br>
+                    <input type="checkbox" name="nao_apresento" id="nao_apresento" value="Não apresento">
+                    <label for="nao_apresento"> Não apresento</label>
+                </div>
+        
+                <div class="campo">
+                    <label for="informacoes-adicionais"><strong>Informações adicionais:</strong></label>
+                    <textarea name="informacoes-adicionais" id="informacoes-adicionais" rows="6" cols="10"></textarea>
+                </div>
+                    <p>
+                        <strong>
+                            Declaro que as informações acima são dotadas de plena veracidade.<br>Comprometo-me a apresentar documentação necessária para corroborar os fatos apresentados.
+                        </strong>
+                    </p><br>
+                    <label for="veracidade" >
+                    <input type="radio" name="veracidade" id="veracidade" required> Confirmo veracidade
+                    </label>
+                 
+                 <button type="submit" id="botao">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
